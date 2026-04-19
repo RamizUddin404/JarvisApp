@@ -10,7 +10,7 @@ jobs:
         with:
           java-version: 11
       - name: Build with Gradle
-        run: chmod +x gradlew && ./gradlew assembleDebug
+        run: gradle assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
